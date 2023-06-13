@@ -41,13 +41,13 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text('ID: ${productElement.id}'),
-              Text('Description: ${productElement.description}'),
+              SelectableText('Description: ${productElement.description}'),
               Text('Price: \$${productElement.price.toStringAsFixed(2)}'),
               Text('Discount Percentage: ${productElement.discountPercentage}'),
               Text('Rating: ${productElement.rating}'),
               Text('Stock: ${productElement.stock}'),
               Text('Brand: ${productElement.brand}'),
-              Text('Category: ${productElement.category}'),
+              SelectableText('Category: ${productElement.category}'),
               Image.network(
                 productElement.thumbnail,
                 fit: BoxFit.cover,
